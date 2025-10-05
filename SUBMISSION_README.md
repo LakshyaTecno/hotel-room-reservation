@@ -1,8 +1,8 @@
 # 🏨 Hotel Room Reservation System
 
-**Live Application URL:** `[LIVE_URL_WILL_BE_ADDED_HERE]`  
-**GitHub Repository:** `[REPOSITORY_URL_WILL_BE_ADDED_HERE]`  
-**Assessment:** Software Development Engineer 3 - Unstop
+**Live Application URL:** https://hotel-room-reservation-system-new.vercel.app/  
+**GitHub Repository:** https://github.com/LakshyaTecno/hotel-room-reservation  
+**Assessment:** Software Development Engineer - Unstop
 
 ---
 

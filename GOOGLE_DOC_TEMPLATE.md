@@ -14,7 +14,7 @@
 
 ### **Live Application**
 
-**URL**: `[ADD_YOUR_HEROKU_URL_HERE]`
+**URL**: https://hotel-room-reservation-system-new.vercel.app/
 
 - ✅ Fully functional hotel room reservation system
 - ✅ All assessment requirements implemented
