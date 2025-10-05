@@ -1,8 +1,8 @@
-# SDE 3 Assessment Submission - Hotel Room Reservation System
+# Hotel Room Reservation System - Assessment Submission
 
 ## 📋 Assessment Information
 
-- **Position**: Software Development Engineer 3 (SDE 3)
+- **Position**: Software Development Engineer 3
 - **Company**: Unstop
 - **Assessment**: Hotel Room Reservation System
 - **Developer**: [YOUR_NAME]
@@ -317,4 +317,4 @@ The system successfully addresses all assessment requirements while providing ad
 
 ---
 
-_Built with ❤️ for SDE 3 Assessment - Demonstrating excellence in software development, algorithm design, and user experience._
+_Built with ❤️ for Software Development Engineer Assessment - Demonstrating excellence in software development, algorithm design, and user experience._

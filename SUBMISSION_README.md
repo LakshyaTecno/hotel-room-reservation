@@ -1,8 +1,8 @@
-# 🏨 Hotel Room Reservation System - SDE 3 Assessment
+# 🏨 Hotel Room Reservation System
 
 **Live Application URL:** `[LIVE_URL_WILL_BE_ADDED_HERE]`  
 **GitHub Repository:** `[REPOSITORY_URL_WILL_BE_ADDED_HERE]`  
-**Assessment:** Software Development Engineer 3 (SDE 3) - Unstop
+**Assessment:** Software Development Engineer 3 - Unstop
 
 ---
 
@@ -310,7 +310,7 @@ npm run dev
 
 ### **Assessment Details**
 
-- **Position**: Software Development Engineer 3 (SDE 3)
+- **Position**: Software Development Engineer 3
 - **Company**: Unstop
 - **Assessment**: Hotel Room Reservation System
 - **Deadline**: 3 days from registration
@@ -321,7 +321,7 @@ npm run dev
 
 **Developer**: [YOUR_NAME]  
 **Email**: [YOUR_EMAIL]  
-**Assessment**: SDE 3 - Hotel Room Reservation System  
+**Assessment**: Hotel Room Reservation System  
 **Submission Date**: [CURRENT_DATE]
 
 ---
@@ -342,4 +342,4 @@ The system successfully addresses all assessment requirements while providing ad
 
 ---
 
-_Built with ❤️ for SDE 3 Assessment - Demonstrating excellence in software development, algorithm design, and user experience._
+_Built with ❤️ for Software Development Engineer Assessment - Demonstrating excellence in software development, algorithm design, and user experience._

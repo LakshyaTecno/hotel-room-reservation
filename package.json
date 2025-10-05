@@ -1,7 +1,7 @@
 {
   "name": "hotel-room-reservation-system",
   "version": "1.0.0",
-  "description": "Hotel Room Reservation System for SDE 3 Assessment",
+  "description": "Hotel Room Reservation System for Software Development Engineer Assessment",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -28,6 +28,6 @@
     "room-booking",
     "travel-time"
   ],
-  "author": "SDE 3 Assessment",
+  "author": "Software Development Engineer Assessment",
   "license": "MIT"
 }

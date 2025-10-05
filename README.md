@@ -1,6 +1,6 @@
 # Hotel Room Reservation System
 
-A comprehensive hotel room reservation system built for the SDE 3 Assessment, featuring optimal room selection based on travel time calculations.
+A comprehensive hotel room reservation system built for the Software Development Engineer Assessment, featuring optimal room selection based on travel time calculations.
 
 ## 🏨 System Overview
 
@@ -225,5 +225,5 @@ For questions or issues:
 
 ---
 
-**Built for SDE 3 Assessment - Hotel Room Reservation System**
+**Built for Software Development Engineer Assessment - Hotel Room Reservation System**
 _Demonstrating optimal algorithms, modern web development, and user experience design_
