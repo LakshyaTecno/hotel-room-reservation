@@ -2,8 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "server.js",
-      "use": "@vercel/node"
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["client/build/**"]
+      }
     }
   ],
   "routes": [
@@ -16,8 +19,9 @@
       "dest": "/client/build/$1"
     }
   ],
-  "env": {
-    "NODE_ENV": "production",
-    "NPM_CONFIG_PRODUCTION": "false"
+  "functions": {
+    "server.js": {
+      "maxDuration": 30
+    }
   }
 }
