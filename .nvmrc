@@ -1,0 +1,2 @@
+# See https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version
+node_version=18.18.0
