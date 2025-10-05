@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import "./styles/index.css";
 
@@ -13,7 +13,7 @@ function App() {
   const [bookedRooms, setBookedRooms] = useState(0);
 
   // Fetch room data
-  const fetchRooms = async () => {
+  const fetchRooms = useCallback(async () => {
     try {
       const response = await axios.get("/api/rooms");
       setRooms(response.data.rooms);
@@ -23,7 +23,7 @@ function App() {
     } catch (error) {
       showMessage("Error fetching room data", "error");
     }
-  };
+  }, []);
 
   // Show message
   const showMessage = (text, type) => {
@@ -110,7 +110,7 @@ function App() {
   // Load rooms on component mount
   useEffect(() => {
     fetchRooms();
-  }, []);
+  }, [fetchRooms]);
 
   // Group rooms by floor for visualization
   const roomsByFloor = rooms.reduce((acc, room) => {
