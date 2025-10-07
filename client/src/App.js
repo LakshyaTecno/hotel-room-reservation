@@ -4,7 +4,7 @@ import "./styles/index.css";
 
 function App() {
   const [rooms, setRooms] = useState([]);
-  const [numRooms, setNumRooms] = useState(1);
+  const [numRooms, setNumRooms] = useState('');
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState("");
@@ -37,8 +37,8 @@ function App() {
 
   // Book rooms
   const handleBookRooms = async () => {
-    if (numRooms < 1 || numRooms > 5) {
-      showMessage("Number of rooms must be between 1 and 5", "error");
+    if (!numRooms || numRooms < 1 || numRooms > 5) {
+      showMessage("Please enter a valid number of rooms (1-5)", "error");
       return;
     }
 
@@ -146,14 +146,24 @@ function App() {
             min="1"
             max="5"
             value={numRooms}
-            onChange={(e) => setNumRooms(parseInt(e.target.value) || 1)}
+            onChange={(e) => {
+              const value = e.target.value;
+              if (value === '') {
+                setNumRooms('');
+              } else {
+                const num = parseInt(value);
+                if (!isNaN(num) && num >= 1 && num <= 5) {
+                  setNumRooms(num);
+                }
+              }
+            }}
           />
         </div>
 
         <button
           className="btn btn-primary"
           onClick={handleBookRooms}
-          disabled={loading || availableRooms < numRooms}
+          disabled={loading || availableRooms < numRooms || !numRooms}
         >
           {loading ? "Booking..." : "Book"}
         </button>
