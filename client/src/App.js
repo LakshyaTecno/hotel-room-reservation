@@ -4,7 +4,7 @@ import "./styles/index.css";
 
 function App() {
   const [rooms, setRooms] = useState([]);
-  const [numRooms, setNumRooms] = useState('');
+  const [numRooms, setNumRooms] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState("");
@@ -15,12 +15,15 @@ function App() {
   // Fetch room data
   const fetchRooms = useCallback(async () => {
     try {
+      console.log("Fetching rooms...");
       const response = await axios.get("/api/rooms");
+      console.log("Rooms fetched successfully:", response.data);
       setRooms(response.data.rooms);
       setTotalRooms(response.data.totalRooms);
       setAvailableRooms(response.data.availableRooms);
       setBookedRooms(response.data.bookedRooms);
     } catch (error) {
+      console.error("Error fetching room data:", error);
       showMessage("Error fetching room data", "error");
     }
   }, []);
@@ -109,6 +112,7 @@ function App() {
 
   // Load rooms on component mount
   useEffect(() => {
+    console.log("Component mounted, fetching rooms...");
     fetchRooms();
   }, [fetchRooms]);
 
@@ -125,6 +129,18 @@ function App() {
   const sortedFloors = Object.keys(roomsByFloor)
     .map(Number)
     .sort((a, b) => b - a);
+
+  // Show loading state if no rooms loaded yet
+  if (rooms.length === 0 && !message) {
+    return (
+      <div className="app">
+        <div className="header">
+          <h1>🏨 Hotel Room Reservation System</h1>
+          <div className="loading">Loading rooms...</div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="app">
@@ -148,8 +164,8 @@ function App() {
             value={numRooms}
             onChange={(e) => {
               const value = e.target.value;
-              if (value === '') {
-                setNumRooms('');
+              if (value === "") {
+                setNumRooms("");
               } else {
                 const num = parseInt(value);
                 if (!isNaN(num) && num >= 1 && num <= 5) {
